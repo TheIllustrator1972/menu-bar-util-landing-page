@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: appData.name,
   description: appData.description,
   icons: {
-    icon: "/AppLogo/AppLogo.png",
+    icon: "/public/AppLogo/AppLogo.png",
   },
   openGraph: openGraphMetadata,
   twitter: twitterMetadata,

@@ -6,7 +6,6 @@ const AppScreenshots = () => {
     "/AppScreenshots/1.png",
     "/AppScreenshots/2.png",
     "/AppScreenshots/3.png",
-    "/AppScreenshots/4.png",
   ];
 
   const [currentScreenSize, setCurrentScreenSize] = useState("base");
@@ -33,9 +32,9 @@ const AppScreenshots = () => {
   const getScreenshotsToDisplay = () => {
     switch (currentScreenSize) {
       case "lg":
-        return allScreenshots.slice(0, 4);
-      case "md":
         return allScreenshots.slice(0, 3);
+      case "md":
+        return allScreenshots.slice(0, 2);
       case "sm":
       case "base":
       default:
@@ -46,7 +45,7 @@ const AppScreenshots = () => {
   const screenshotsToRender = getScreenshotsToDisplay();
   return (
     <div className="w-full px-4 py-8 sm:px-6 md:px-8 lg:px-10">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-3 sm:gap-4 md:grid-cols-3 md:gap-3 lg:grid-cols-4 lg:gap-6">
+      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-3 sm:gap-4 md:grid-cols-2 md:gap-3 lg:grid-cols-3 lg:gap-6">
         {screenshotsToRender.map((src, index) => (
           <div key={index} className="relative overflow-visible rounded-lg">
             <img

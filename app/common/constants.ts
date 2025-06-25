@@ -1,7 +1,8 @@
 export const appData = {
-  name: "App Name",
-  title: "App Title",
-  description: "This is a brief description of the app.",
+  name: "Utility Bar",
+  title: "Utility Bar for daily tasks",
+  description:
+    "Streamline your macOS workflow with this intuitive menu bar utility",
   isLaunched: false,
   socialLinks: {
     email: "mailto:theillustrator2001@gmail.com",
@@ -16,8 +17,7 @@ export const appData = {
 export const openGraphMetadata = {
   title: appData.name,
   description: appData.description,
-  // The URL should be the place where the website is deployed
-  url: "https://indie-app-landing-page-template.vercel.app/",
+  url: "https://menu-bar-util-landing-page.vercel.app/",
   siteName: appData.name,
   images: [
     {
