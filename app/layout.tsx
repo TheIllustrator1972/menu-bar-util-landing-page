@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   title: appData.name,
   description: appData.description,
   icons: {
-    icon: "/public/AppLogo/AppLogo.png",
+    icon: "/AppLogo/AppLogo.png",
   },
   openGraph: openGraphMetadata,
   twitter: twitterMetadata,
@@ -33,6 +33,7 @@ export default function RootLayout({
   const GoogleAnalyticsId = "G-B28R21DJWJ";
   return (
     <html lang="en" className={roboto.variable}>
+      <link rel="icon" href="/AppLogo/AppLogo.png" type="image/png" />
       <head>
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GoogleAnalyticsId}`}
